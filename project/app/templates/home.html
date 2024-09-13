@@ -1,0 +1,8 @@
+<a href="{% url 'register' %}">Register</a>
+
+<hr />
+
+<form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Login</button>
+</form>
